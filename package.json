@@ -8,8 +8,14 @@
     "node": ">=6.13.0"
   },
   "scripts": {
+    "build:dev": "webpack -d --watch",
+    "start:dev": "nodemon server/index.js"
   },
   "dependencies": {
+    "express": "^4.17.1",
+    "http-proxy-middleware": "^1.0.5",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7"
   },
   "devDependencies": {
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor"
