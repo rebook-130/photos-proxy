@@ -13,7 +13,7 @@ app.listen( port, () => {
 app.use('/api/photogallery/:roomId', createProxyMiddleware({ target: `http://54.219.99.93:3001/`, changeOrigin: true }));
 
 // Calender
-app.use('/api/calendar', createProxyMiddleware({ target: `http://calendar-service:3002`, changeOrigin: true }));
+app.use('/api/calendar', createProxyMiddleware({ target: `http://3.138.89.74:3002`, changeOrigin: true }));
 
 // Reviews
 app.use('/api/rooms/:roomId', createProxyMiddleware({ target: `http://3.136.76.170:3003/`, changeOrigin: true }));
