@@ -16,7 +16,7 @@ app.use('/api/photogallery/:roomId', createProxyMiddleware({ target: `http://54.
 app.use('/api/calendar', createProxyMiddleware({ target: `http://calendar-service:3002`, changeOrigin: true }));
 
 // Reviews
-app.use('/api/rooms/:roomId', createProxyMiddleware({ target: `http://3.136.76.170:3003`, changeOrigin: true }));
+app.use('/api/rooms/:roomId', createProxyMiddleware({ target: `http://3.136.76.170:3003/`, changeOrigin: true }));
 
 // More Places to Stay
 app.use('/api/more_places', createProxyMiddleware({ target: `http://54.219.211.68:3004/`, changeOrigin: true}));
