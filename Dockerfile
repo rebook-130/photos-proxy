@@ -8,8 +8,4 @@ COPY . /src/app
 
 RUN npm install
 
-RUN npm run build:prod
-
-# CMD ["npm", "run", "start:prod"]
-
-CMD ["sh", "-c", "sleep 30; npm run start:prod"]
+CMD ["npm", "run", "start:prod"]
