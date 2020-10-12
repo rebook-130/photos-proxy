@@ -6,18 +6,24 @@ img {
 #calendar-with-description-container {
   display: flex;
   justify-content: center;
-  width: 100%
+  width: 100%;
 }
 
 #calendar-with-description {
   display: flex;
   justify-content: space-between;
-  /* position: relative; */
   width: 1170px;
 }
 
 .center {
   display: flex;
   justify-content: center;
-  width: 100%
+  width: 100%;
+}
+
+.more-places {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(247, 247, 247);
 }
